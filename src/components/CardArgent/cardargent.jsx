@@ -3,14 +3,14 @@ import '../../styles/card-argent-style/card-argent-style.css';
 function CardArgent ({id ,title, money, subtitle}) {
 
     return (
-        <div>
+        <div className='cardArgentBody'>
             <div className='cardArgentLeft'>
-                <p>{title}</p>
-                <p>{money}</p>
-                <p>{subtitle}</p>
+                <p className='account-title'>{title}</p>
+                <p className='account-amount'>${money}</p>
+                <p className='account-amount-description'>{subtitle}</p>
             </div>
             <div className='cardArgentRight'>
-                <button>View transactions</button>
+                <button className='transaction-button'>View transactions</button>
             </div>
         </div>
     ) 
